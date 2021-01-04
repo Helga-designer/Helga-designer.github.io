@@ -4,6 +4,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-image: url("images/patt.png");
+    margin: 0;
 }
 .container{
     width: 1200px;
@@ -73,19 +74,21 @@ width: 75%;
 }
 .input-search-text{
     border: none;
+    padding-left: 20px;
     height: 40px;
     outline: none;
     background: none;
+    font-size: 21px;
+    font-weight: 300;
+    color: #2c71b8;
 }
 .input-search-text:focus{
     border: none;
     background: none;
 }
 .input-search-text::placeholder{
-    padding-left: 20px;
+    padding-left: 0px;
     padding-top: 15px;
-    font-size: 21px;
-    font-weight: 300;
     color: #2c71b8;
 }
 .input-search-button{
@@ -103,6 +106,68 @@ width: 75%;
     outline: none;
     cursor: pointer;
 }
-
-
-
+.cart{
+    background-image: url(images/icon\ \(2\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2c71b8;
+    margin-top: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.circle{
+position: absolute;
+line-height: 20px;
+width: 20px;
+height: 20px;
+font-size: 12px;
+background-color: white;
+text-align: center;
+border-radius: 50%;
+color: #2c71b8;
+top: -10px;
+left: -10px;
+}
+.menu ul{
+    list-style: none;
+    position: relative;
+    background-color:  rgba(255, 255, 255, 0.75);
+    font-size: 21px;
+    font-weight: 300;
+    color: white;
+}
+.menu ul::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .menu li ul{
+    width: 285px;
+    height: 40px;
+    position: relative;
+    float: left;
+}
+.menu li .submenu a{
+    display: block;
+    height: 40px;
+    min-width: 100px;
+    text-decoration: none;
+    background-color: #2c71b8;
+    color:white;
+    text-align: left;
+    padding-left: 28px;
+    line-height: 40px;
+}
+.submenu li a:hover{
+    background-color: white;
+    color: #2c71b8;
+}
+.col-md-6 ul .submenu{
+    display: none;
+    position: absolute;
+}
+.col-md-6 li:hover .submenu{
+    display: block;
+}
